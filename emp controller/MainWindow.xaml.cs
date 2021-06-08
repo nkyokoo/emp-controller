@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using emp_controller.config;
 
 namespace emp_controller
 {
@@ -22,9 +12,36 @@ namespace emp_controller
     {
         public MainWindow()
         {
+             
+            string configPath = @"InstallationConfig.json";
+            if (File.Exists(configPath))
+            {
+                string text = File.ReadAllText(configPath);
+                InstallationConfig.FromJson(text);
+                
+
+            }
+            else
+            {
+                InstallationConfig installationConfig = new InstallationConfig
+                {
+                    Nginx = new config.config {Date = "", Installed = false, Path = ""},
+                    Php = new config.config {Date = "", Installed = false, Path = ""},
+                    Phpmyadmin = new config.config {Date = "", Installed = false, Path = ""},
+                    Mysql = new config.config {Date = "", Installed = false, Path = ""}
+                };
+
+
+                File.WriteAllText(configPath, installationConfig.ToJson());
+                Console.WriteLine("wrote file");
+                
+            }
+            
+            // Read the file as one string.
             InitializeComponent();
-            GUIConsole writer = new GUIConsole(GUIConsoleTextBox);
-            Console.SetOut(writer);
+         
         }
+     
     }
+ 
 }
