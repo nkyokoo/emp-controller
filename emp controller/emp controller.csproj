@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>emp_controller</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\img\mysql-logo.png" />
+    <None Remove="assets\img\nginx_logo.png" />
+    <None Remove="assets\img\php_logo.png" />
+    <None Remove="mysql-logo.png" />
+    <None Remove="nginx_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\img\mysql-logo.png" />
+    <Content Include="assets\img\nginx_logo.png" />
+    <Content Include="assets\img\php_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="mysql-logo.png" />
+    <Resource Include="nginx_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
