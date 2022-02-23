@@ -1,9 +1,24 @@
-# EMP controller
+# emp-controller
 
-Dansk:
-Nnginx MySQL PHP stack manager for windows lavet i cskaprt og WPF. Programmet downloader stacken og vil give dig mulighed for at installere stacken som service.
+## Project setup
+```
+npm install
+```
 
-English:
-Nnginx MySQL  HP stack manager for windows made using WPF and C#. Program downloads the stack and will give you the option to install it as a service.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
+### Compiles and minifies for production
+```
+npm run build
+```
 
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

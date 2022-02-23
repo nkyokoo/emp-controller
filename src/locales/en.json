@@ -1,0 +1,33 @@
+{
+  "nginx": {
+    "desc": "Fast web server",
+    "showWebpage": "Open webpage in browser"
+  },
+  "php": {
+    "desc": "Language runtime for your php website or backend",
+    "showConfig": "Show php configuration in editor"
+  },
+  "phpmyadmin": {
+    "desc": "Webbased mysql management tool. You need to install php to use it.",
+    "ShowPHPMyAdmin": "Open PHPMyAdmin in web browser"
+  },
+  "mysql": {
+    "description": "Database server to store your data in"
+  },
+  "optional": {
+    "name": "optional",
+    "desc": "You don't have to install {item} if you don't need it!"
+  },
+  "showConfig": "Show {item} configuration in editor",
+  "installed": "installed",
+  "uninstalled": "uninstalled",
+  "true": "true",
+  "false": "false",
+  "log": {
+    "title": "log",
+    "showLog": "Show {item} log"
+  },
+  "terminal": "terminal",
+  "start": "start",
+  "stop": "stop"
+}

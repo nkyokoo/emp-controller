@@ -1,0 +1,32 @@
+{
+  "nginx": {
+    "desc": "Hurtig web server",
+    "showWebpage": "Åben web side i browser"
+  },
+  "php": {
+    "desc": "php runtime til din php webside eller backend"
+  },
+  "phpmyadmin": {
+    "desc": "Webbased mysql adminstrationsværtøj. Du skal installere php for at bruge det.",
+    "ShowPHPMyAdmin": "Åben PHPMyAdmin i web browser"
+  },
+  "mysql": {
+    "description": "Database server til at gemme dine data i"
+  },
+  "optional": {
+    "name": "Valgfri",
+    "desc": "Du behøves ikke at installere {item}, hvis du ikke ønsker!"
+  },
+  "showConfig": "Vis {item} configuration i editor",
+  "installed": "Installeret",
+  "uninstalled": "Ikke installeret",
+  "true": "sandt",
+  "false": "Falsk",
+  "log": {
+    "title": "log",
+    "showLog": "Vis log for {item}"
+  },
+  "terminal": "Terminal",
+  "start": "Start",
+  "stop": "Stop"
+}
